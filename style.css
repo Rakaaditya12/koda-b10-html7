@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 10px 15px 10px 15px;
+  border-radius: 30px;
+  background-color: rgb(230, 230, 230);
+  width: 20%;
+  position: relative;
+  left: 450px;
+  top: 30px;
+}
+
+.container > .calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(6, 50px);
+  gap: 5px;
+  /* background-color: white; */
+  background: rgb(235, 232, 232);
+  border: 7px solid;
+  border-color: rgb(240, 239, 239);
+  margin-top: 15px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.container > .calculator > button {
+  border: unset;
+  font-size: 17px;
+  padding: 3px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 10px;
+  opacity: 0.8;
+}
+
+.container > .calculator > .bagi, .x, .kurang, .tambah {
+    color: blue;
+}
+
+.container > .calculator > .sama-dengan {
+  background-color: rgb(19, 19, 248);
+  color: white;
+  border-radius: 20px;
+}
+
+.container > p {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: rgb(3, 112, 222);
+}
+
+.container > .calculator > span {
+  grid-column: 4;
+  font-size: 30px;
+  position: relative;
+  left: 30px;
+  top: 10px;
+  opacity: 0.8;
+}
+
+.container > .calculator > button > img {
+  width: 20px;
+}
+
+.container > .calculator > button:hover {
+  background-color: rgb(226, 225, 225);
+}
